@@ -1,4 +1,4 @@
-# COMP 3320 - Principles of Programming Languages
+# COMP 3220 - Principles of Programming Languages
 
 This repository contains assignments for COMP 3320 Principles of Programming Languages course.
 

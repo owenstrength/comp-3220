@@ -1,0 +1,33 @@
+ID x
+whitespace  
+= =
+whitespace  
+INT 3
+whitespace 
+ID y
+whitespace  
+= =
+whitespace  
+INT 5
+whitespace 
+ID z
+whitespace  
+= =
+whitespace  
+( (
+ID x
+whitespace  
++ +
+whitespace  
+ID y
+) )
+whitespace  
+/ /
+whitespace  
+INT 3
+whitespace 
+print print
+whitespace  
+ID z
+whitespace 
+eof eof

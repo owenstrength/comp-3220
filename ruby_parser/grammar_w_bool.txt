@@ -1,0 +1,22 @@
+# https://www.cs.rochester.edu/~brown/173/readings/05_grammars.txt
+#
+#  "TINY" Grammar with Boolean
+# PGM		 -->   STMTSEQ
+# STMTSEQ    -->   STMT+
+# STMT       -->   ASSIGN   |   "print"  EXP   | IFSTMT | LOOPSTMT                        
+# IFSTMT	 -->   "if" COMPARISON "then" STMTSEQ "end"
+# LOOPSTMT	 -->   "while" COMPARISON "then" STMTSEQ "end"
+# COMPARISON -->   FACTOR ( "<" | ">" | "&" ) FACTOR
+# ASSIGN     -->   ID  "="  EXP
+# EXP        -->   TERM   ETAIL
+# ETAIL      -->   "+" TERM   ETAIL  | "-" TERM   ETAIL | EPSILON
+# TERM       -->   FACTOR  TTAIL
+# TTAIL      -->   "*" FACTOR TTAIL  | "/" FACTOR TTAIL | EPSILON
+# FACTOR     -->   "(" EXP ")" | INT | ID   
+#                  
+# ID         -->   ALPHA+
+# ALPHA      -->   a  |  b  | … | z  or 
+#                  A  |  B  | … | Z
+# INT        -->   DIGIT+
+# DIGIT      -->   0  |  1  | …  |  9
+# WHITESPACE -->   Ruby Whitespace
